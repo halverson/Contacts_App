@@ -1,9 +1,21 @@
-var contact = {
-  'name': 'Brent Nygaard',
-  'tel': '084 047 9471',
-  'email': 'nygaardmeister@gmail.com'
-}
+'use strict'
 
-console.log(contact.name)
-console.log(contact.tel)
-console.log(contact.email)
+class Contact {
+  constructor (name, tel, email) {
+    this.name = name
+    this.tel = tel
+    this.email = email
+  }
+
+  Name () {
+    console.log('Name: ' + this.name)
+  }
+
+  Tel () {
+    console.log('Phone Number: ' + this.tel)
+  }
+
+  Email () {
+    console.log('Email Address: ' + this.email)
+  }
+}
